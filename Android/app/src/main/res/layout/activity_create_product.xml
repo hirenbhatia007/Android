@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tpatel1474.finalproject.CreateProduct">
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Name"
+        android:textColor="@color/colorAccent"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtCuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtName"
+        android:layout_alignStart="@+id/txtName"
+        android:layout_below="@+id/txtName"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Cuisine"
+        android:textColor="@color/colorAccent"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCuisine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Price"
+        android:textColor="@color/colorAccent"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnUpdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:background="@color/colorPrimary"
+        android:text="Create Food" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCreate"
+        android:layout_alignBottom="@+id/btnCreate"
+        android:layout_alignEnd="@+id/txtId"
+        android:layout_alignRight="@+id/txtId"
+        android:background="@color/colorPrimary"
+        android:text="View Food" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnCreate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnCreate"
+        android:layout_marginBottom="35dp"
+        android:background="@color/colorPrimary"
+        android:text="Update Food" />
+
+    <EditText
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPrice"
+        android:layout_alignStart="@+id/txtPrice"
+        android:layout_below="@+id/txtPrice"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Id"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnUpdate"
+        android:layout_alignBottom="@+id/btnUpdate"
+        android:layout_alignLeft="@+id/btnView"
+        android:layout_alignStart="@+id/btnView"
+        android:background="@color/colorPrimary"
+        android:text="Delete  Food" />
+</RelativeLayout>
